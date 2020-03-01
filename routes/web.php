@@ -25,3 +25,5 @@ Route::get('/posts/closure/{post}', function($post) {
 
     return $posts[$post];
 });
+
+Route::get('/posts/{post}', 'PostsController@show');
